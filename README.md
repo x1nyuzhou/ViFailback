@@ -19,7 +19,6 @@ This repository provides the core utility scripts for parsing, rendering, and in
   - *Motion Symbols*: Colored Straight Arrows (3D spatial movement), Semi-circular Arrows (rotation).
   - *Spatial Relation Symbols*: Crosshairs, Dual Crosshairs (alignment).
   - *State Symbols*: ON/OFF text, Prohibition (Lock), Rewind icons.
-- **Coordinate Normalization**: Supports native `[0, 1000]` normalized coordinates outputted by VLMs (like Qwen3-VL), scaling them dynamically to any target image resolution, as well as absolute pixel coordinates for dataset ground-truths.
 - **End-to-End Inference pipeline (`vifailback_infer.py`)**: A ready-to-use script to load **ViFailback-8B**, prompt it with failure rollout frames, extract the Chain-of-Thought (CoT) `<Answer>` blocks, and overlay the generated visual guidance directly onto the failure keyframe.
 
 ## 🛠️ Installation
