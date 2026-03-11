@@ -1,0 +1,28 @@
+[
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "<image><image><image><image><image><image><image><image><image><image><image><image><image><image><image>These images are captured by the head camera of the dual-arm robot in chronological order.\nThe task is to: 'Use the right arm to place the orange block into the bowl. Then, use the left arm to open the microwave door, use the right arm to put the bowl into the microwave, and finally, close the microwave door.'.\n\nPlease provide a complete analysis of the robot's execution.\n\nYour analysis should follow these steps in your reasoning:\n1. First, determine if the task was completed successfully (Your answer must be only one of the three options: ['Successful' or 'Failed']).\n2. If the task execution is failed, perform **Failure Localization**: Identify the numerical position(1-N) of the key image frame just before the failure began.\n3. Next, perform **Failure Classification**: Choose one of the following failure types. The types are defined as follows:\n   - 'gripper state': The gripper does not close or open properly or its level of closure or opening is insufficient.\n   - 'gripper 6d-pose': The end-effector fails to reach its correct position or orientation.\n   - 'task planning': A subtask is skipped or the wrong target object is selected.\n   - 'human intervention': Human interference makes the task impossible to complete.\n4. Then, provide a **Low-Level Avoidance Command**: This command must be a clear natural language instruction to help the robot avoid the failure. It must include the following elements:\n   - **Target Gripper**: Specify either 'left gripper' or 'right gripper'.\n   - **Specific Action**: Choose one or more from:\n     - Move: Direction must be one of [upward, downward, left, right, forward, backward], optionally with a magnitude [slightly, significantly].\n     - Rotate: Direction must be one of [clockwise, counter-clockwise].\n     - Grasp: State must be one of [open, close].\n5. Finally, generate the **Visual Prompt Instructions** based on the low-level command.\n\nWhen generating the visual prompts, you must follow these drawing rules:\n1. Use **Straight Arrows** to indicate movement direction:\n   - The color indicates which axis the movement is related to: Red for x-axis, green for y-axis, and blue for z-axis.\n   - The spatial orientation of the arrow indicates positive/negative direction.\n   - Arrows with multiple color segments mean movement along multiple axes.\n2. Use **Rotating Arrows** to indicate rotation direction.\n3. Use **ON/OFF** text to indicate the gripper state ('ON' for open, 'OFF' for close).\n4. Use **Dual Crosshairs** to indicate that the object at the first crosshair should be aligned with the position of the second crosshair.\n5. Use a **Crosshair** to indicate the correct target object.\n6. Use a **Lock** icon to indicate that the selected object should remain stationary.\n7. Use a **Rewind** icon to indicate that the selected object should return to its previous position or state.\n\nPresent your response using the following format:\n- Your step-by-step reasoning must be enclosed in <Think></Think> tags.\n- Your final answer must be enclosed in <Answer></Answer> tags.\n- The answer block should contain the 'success detection' status, the 'keyframe', the 'low level commands', and the 'visual prompts'."
+            }
+        ],
+        "images": [
+            "annotated_data/pick_orange_block_place_into_microwave/frames/episode_62_cam_high/0.jpg",
+            "annotated_data/pick_orange_block_place_into_microwave/frames/episode_62_cam_high/25.jpg",
+            "annotated_data/pick_orange_block_place_into_microwave/frames/episode_62_cam_high/50.jpg",
+            "annotated_data/pick_orange_block_place_into_microwave/frames/episode_62_cam_high/75.jpg",
+            "annotated_data/pick_orange_block_place_into_microwave/frames/episode_62_cam_high/100.jpg",
+            "annotated_data/pick_orange_block_place_into_microwave/frames/episode_62_cam_high/125.jpg",
+            "annotated_data/pick_orange_block_place_into_microwave/frames/episode_62_cam_high/150.jpg",
+            "annotated_data/pick_orange_block_place_into_microwave/frames/episode_62_cam_high/172_avoid_keyframe.jpg",
+            "annotated_data/pick_orange_block_place_into_microwave/frames/episode_62_cam_high/175.jpg",
+            "annotated_data/pick_orange_block_place_into_microwave/frames/episode_62_cam_high/200.jpg",
+            "annotated_data/pick_orange_block_place_into_microwave/frames/episode_62_cam_high/225.jpg",
+            "annotated_data/pick_orange_block_place_into_microwave/frames/episode_62_cam_high/250.jpg",
+            "annotated_data/pick_orange_block_place_into_microwave/frames/episode_62_cam_high/269_correct_keyframe.jpg",
+            "annotated_data/pick_orange_block_place_into_microwave/frames/episode_62_cam_high/275.jpg",
+            "annotated_data/pick_orange_block_place_into_microwave/frames/episode_62_cam_high/288.jpg"
+        ],
+        "tag": "cot_avoidance_code_qa"
+    }
+]

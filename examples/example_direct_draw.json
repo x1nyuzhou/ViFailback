@@ -1,0 +1,117 @@
+[
+    {
+        "messages": [
+            {
+                "role": "assistant",
+                "content": "<Think>\nFirst, I need to determine if the task was successful. The provided data indicates a failure occurred.\nNext, I must localize when the failure began. The keyframe just before the failure is image number 13.\nNow I need to classify the failure. The failure type is identified as 'gripper 6d-pose'.\nBased on this, I will formulate a low-level command to avoid the failure. The corrective action is: 'Move the right gripper to the right significantly and backward significantly, and rotate the right gripper clockwise.'.\nFinally, I will generate the visual prompt commands corresponding to this low-level correction. The required drawings are:\nDraw Straight Arrow: {'start_point': [602, 179], 'end_point': [689, 325], 'color': ['green', 'red']}\nDraw Rotating Arrow: {'center': [550, 179], 'direction': 'clockwise'}\nDraw Dual Crosshair: {'start_point': [806, 196], 'end_point': [789, 317]}\n</Think>\n<Answer>\n\"success detection\": \"Failed\",\n\"keyframe\": \"13\"\n\"low level commands\": \"Move the right gripper to the right significantly and backward significantly, and rotate the right gripper clockwise.\",\n\"visual prompts\": \"Draw Straight Arrow: {'start_point': [602, 179], 'end_point': [689, 325], 'color': ['green', 'red']}\nDraw Rotating Arrow: {'center': [550, 179], 'direction': 'clockwise'}\nDraw Dual Crosshair: {'start_point': [806, 196], 'end_point': [789, 317]}\"\n</Answer>"
+            }
+        ],
+        "images": [
+            "annotated_data/pick_marker_draw_cross_ep1/frames/episode_93_cam_high/0.jpg",
+            "annotated_data/pick_marker_draw_cross_ep1/frames/episode_93_cam_high/25.jpg",
+            "annotated_data/pick_marker_draw_cross_ep1/frames/episode_93_cam_high/50.jpg",
+            "annotated_data/pick_marker_draw_cross_ep1/frames/episode_93_cam_high/75.jpg",
+            "annotated_data/pick_marker_draw_cross_ep1/frames/episode_93_cam_high/100.jpg",
+            "annotated_data/pick_marker_draw_cross_ep1/frames/episode_93_cam_high/125.jpg",
+            "annotated_data/pick_marker_draw_cross_ep1/frames/episode_93_cam_high/150.jpg",
+            "annotated_data/pick_marker_draw_cross_ep1/frames/episode_93_cam_high/175.jpg",
+            "annotated_data/pick_marker_draw_cross_ep1/frames/episode_93_cam_high/200.jpg",
+            "annotated_data/pick_marker_draw_cross_ep1/frames/episode_93_cam_high/225.jpg",
+            "annotated_data/pick_marker_draw_cross_ep1/frames/episode_93_cam_high/250.jpg",
+            "annotated_data/pick_marker_draw_cross_ep1/frames/episode_93_cam_high/275.jpg",
+            "annotated_data/pick_marker_draw_cross_ep1/frames/episode_93_cam_high/292_avoid_keyframe.jpg",
+            "annotated_data/pick_marker_draw_cross_ep1/frames/episode_93_cam_high/300.jpg",
+            "annotated_data/pick_marker_draw_cross_ep1/frames/episode_93_cam_high/320_correct_keyframe.jpg",
+            "annotated_data/pick_marker_draw_cross_ep1/frames/episode_93_cam_high/325.jpg",
+            "annotated_data/pick_marker_draw_cross_ep1/frames/episode_93_cam_high/350.jpg",
+            "annotated_data/pick_marker_draw_cross_ep1/frames/episode_93_cam_high/375.jpg",
+            "annotated_data/pick_marker_draw_cross_ep1/frames/episode_93_cam_high/386.jpg"
+        ],
+        "tag": "cot_avoidance_code_qa"
+    },
+    {
+        "video": "grasp_spatula_place_basket/videos/episode_3_cam_high.mp4",
+        "task": "Use the left arm to grasp the wooden spatula and place it in the blue basket.",
+        "failure_detection": "yes",
+        "images": [
+            "grasp_spatula_place_basket/frames/episode_3_cam_high/0.jpg",
+            "grasp_spatula_place_basket/frames/episode_3_cam_high/24_avoid_keyframe.jpg",
+            "grasp_spatula_place_basket/frames/episode_3_cam_high/25.jpg",
+            "grasp_spatula_place_basket/frames/episode_3_cam_high/50.jpg",
+            "grasp_spatula_place_basket/frames/episode_3_cam_high/75.jpg",
+            "grasp_spatula_place_basket/frames/episode_3_cam_high/100.jpg",
+            "grasp_spatula_place_basket/frames/episode_3_cam_high/104_correct_keyframe.jpg",
+            "grasp_spatula_place_basket/frames/episode_3_cam_high/125.jpg",
+            "grasp_spatula_place_basket/frames/episode_3_cam_high/150.jpg",
+            "grasp_spatula_place_basket/frames/episode_3_cam_high/175.jpg",
+            "grasp_spatula_place_basket/frames/episode_3_cam_high/177.jpg"
+        ],
+        "subtasks": [
+            "1. Move the left arm to approach and align the wooden spatula.",
+            "2. Grasp the wooden spatula.",
+            "3. Move the left arm to align with the blue basket.",
+            "4. Release the gripper to place the wooden spatula into the blue basket."
+        ],
+        "keyframe": [
+            {
+                "avoid_keyframe": "grasp_spatula_place_basket/frames/episode_3_cam_high/24_avoid_keyframe.jpg",
+                "correct_keyframe": "grasp_spatula_place_basket/frames/episode_3_cam_high/104_correct_keyframe.jpg"
+            }
+        ],
+        "failure_subtask": "1",
+        "failure_type": "task planning",
+        "avoidance": [
+            {
+                "low_level": " ",
+                "avoid_keyframe_annotations": "grasp_spatula_place_basket/frames/episode_3_cam_high/24_avoid_keyframe_annotations.jpg",
+                "avoid_keyframe_annotations_code": [
+                    {
+                        "type": "lock",
+                        "pos": [
+                            481,
+                            241
+                        ]
+                    },
+                    {
+                        "type": "dual_crosshair",
+                        "p1": [
+                            80,
+                            238
+                        ],
+                        "p2": [
+                            219,
+                            245
+                        ]
+                    }
+                ]
+            }
+        ],
+        "correction": [
+            {
+                "low_level": " ",
+                "correct_keyframe_annotations": "grasp_spatula_place_basket/frames/episode_3_cam_high/104_correct_keyframe_annotations.jpg",
+                "correct_keyframe_annotations_code": [
+                    {
+                        "type": "rewind",
+                        "pos": [
+                            271,
+                            116
+                        ]
+                    },
+                    {
+                        "type": "dual_crosshair",
+                        "p1": [
+                            74,
+                            242
+                        ],
+                        "p2": [
+                            287,
+                            150
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+
+]
