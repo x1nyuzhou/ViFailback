@@ -3,7 +3,7 @@
 <p align="center">
   <a href="https://x1nyuzhou.github.io/vifailback.github.io/"><img src="https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white" alt="Project Page"></a>
   <a href="https://arxiv.org/abs/2512.02787"><img src="https://img.shields.io/badge/arXiv-2512.02787-b31b1b?logo=arxiv&logoColor=white" alt="arXiv"></a>
-  <a href="#url-tbd"><img src="https://img.shields.io/badge/🤗_Model-ViFailback--8B-ffc107" alt="HuggingFace Model"></a>
+  <a href="https://huggingface.co/sii-rhos-ai/ViFailback-8B"><img src="https://img.shields.io/badge/🤗_Model-ViFailback--8B-ffc107" alt="HuggingFace Model"></a>
   <a href="#url-tbd"><img src="https://img.shields.io/badge/🤗_Dataset-ViFailback_Dataset-ffc107" alt="HuggingFace Dataset"></a>
 </p>
 
