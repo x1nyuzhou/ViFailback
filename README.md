@@ -43,7 +43,7 @@ Use this script to visualize existing JSON datasets. It automatically handles bo
 ```bash
 python direct_draw.py \
     --json_path ./examples/example_direct_draw.json \
-    --dataset_root /path/to/ViFailback_Dataset \
+    --dataset_root /path/to/ViFailback-Dataset \
     --output_dir ./direct_visualizations
 ```
 
@@ -55,7 +55,7 @@ Run real-time inference using the fine-tuned ViFailback-8B model (our LoRA check
 python vifailback_infer.py \
     --model_path /path/to/ViFailback-8B \
     --json_path ./examples/example_vifailback_infer.json \
-    --dataset_root /path/to/ViFailback_Dataset \
+    --dataset_root /path/to/ViFailback-Dataset \
     --output_dir ./inference_visualizations
 ```
 

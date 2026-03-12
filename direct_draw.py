@@ -107,7 +107,7 @@ def process_format_2_original_annotation(item, item_index, dataset_root, output_
 def main():
     parser = argparse.ArgumentParser(description="Directly draw annotations from a JSON file onto images.")
     parser.add_argument("--json_path", type=str, required=True, help="Path to the JSON data file.")
-    parser.add_argument("--dataset_root", type=str, default="./ViFailback_Dataset", help="Root directory of the dataset images.")
+    parser.add_argument("--dataset_root", type=str, default="./ViFailback-Dataset", help="Root directory of the dataset images.")
     parser.add_argument("--output_dir", type=str, default="./visualized_results", help="Directory to save the visualized results.")
     args = parser.parse_args()
 

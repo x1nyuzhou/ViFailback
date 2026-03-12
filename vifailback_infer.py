@@ -75,7 +75,7 @@ def main():
     parser = argparse.ArgumentParser(description="Run visual-language model inference and draw generated visual prompts.")
     parser.add_argument("--model_path", type=str, required=True, help="Path to the trained model (e.g., LLaMA-Factory output dir).")
     parser.add_argument("--json_path", type=str, required=True, help="Path to the JSON data file containing inference tasks.")
-    parser.add_argument("--dataset_root", type=str, default="./ViFailback_Dataset", help="Root directory of the dataset images.")
+    parser.add_argument("--dataset_root", type=str, default="./ViFailback-Dataset", help="Root directory of the dataset images.")
     parser.add_argument("--output_dir", type=str, default="./visualized_results", help="Directory to save the visualized results.")
     parser.add_argument("--disable_normalization", action="store_true", help="Pass this flag if the model outputs absolute coordinates instead of 0-1000.")
     args = parser.parse_args()
