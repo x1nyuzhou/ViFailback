@@ -87,9 +87,9 @@ python vifailback_infer.py \
 
 
 ## 📊 Dataset and Model
-**🤗 ViFailback Dataset:** 58,128 high-quality VQA pairs across 5,202 real-world manipulation trajectories.
+**🤗 [ViFailback Dataset](https://huggingface.co/datasets/sii-rhos-ai/ViFailback-Dataset):** 58,128 high-quality VQA pairs across 5,202 real-world manipulation trajectories.
 
-**🤗 ViFailback-8B Model:** Our fine-tuned Vision-Language Model for manipulation failure diagnosis and correction.
+**🤗 [ViFailback-8B Model](https://huggingface.co/sii-rhos-ai/ViFailback-8B):** Our fine-tuned Vision-Language Model for manipulation failure diagnosis and correction.
 
 ## 📝 Citation
 If you find our paper, dataset, or code useful in your research, please consider citing our work:
