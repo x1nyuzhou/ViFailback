@@ -22,23 +22,40 @@ This repository provides the core utility scripts for parsing, rendering, and in
 - **End-to-End Inference pipeline (`vifailback_infer.py`)**: A ready-to-use script to load **ViFailback-8B**, prompt it with failure rollout frames, extract the Chain-of-Thought (CoT) `<Answer>` blocks, and overlay the generated visual guidance directly onto the failure keyframe.
 
 ## 🛠️ Installation
-### Option 1: For rendering visual symbols only (Direct Draw)
-If you only need to parse and draw visual symbols onto images (e.g., `using direct_draw.py`), you only need the basic image processing libraries:
-```bash
-pip install opencv-python numpy Pillow
-```
-Note: To ensure Emoji state symbols (like `:prohibited:`) render correctly as text fallbacks across all operating systems without local .png files, it is highly recommended to also install the emoji library: `pip install emoji`.
 
-### Option 2: For ViFailback-8B inference
-If you plan to run the end-to-end VLM inference script (`vifailback_infer.py`) based on Qwen3-VL, you need to install the deep learning and Hugging Face libraries in addition to the rendering tools:
+### 1. Create a New Environment
+We highly recommend creating an isolated virtual environment before installing the dependencies to avoid conflicts.
+
+**Using Conda (Recommended):**
 ```bash
-pip install opencv-python numpy Pillow torch transformers qwen_vl_utils
+conda create -n vifailback python=3.10 -y
+conda activate vifailback
+```
+### 2. Install Dependencies
+Depending on your use case, choose one of the following installation options:
+
+**Option 1: For rendering visual symbols only (Direct Draw)**
+
+If you only need to parse and draw visual symbols onto images (e.g., using direct_draw.py), you only need the basic image processing libraries.
+
+Install the dependencies:
+```bash
+pip install -r requirements_render.txt
+```
+
+**Option 2: For ViFailback-8B inference and rendering visual symbols**
+
+If you plan to run the end-to-end VLM inference script (`vifailback_infer.py`), you need to install the deep learning and Hugging Face libraries in addition to the rendering tools.
+
+Install the dependencies:
+```bash
+pip install -r requirements.txt
 ```
 
 
 ## 🚀 Usage
-1. Direct Visual Symbol Drawing (`direct_draw.py`)
-Use this script to visualize existing JSON datasets. It automatically handles both our raw ground-truth annotations and the generated <Answer> outputs from VLMs (ShareGPT VQA template).
+### 1. Direct Visual Symbol Drawing (`direct_draw.py`)
+Use this script to visualize existing JSON datasets. It automatically handles both our raw ground-truth annotations and the outputs from VLMs (ShareGPT VQA template).
 
 ```bash
 python direct_draw.py \
@@ -46,8 +63,12 @@ python direct_draw.py \
     --dataset_root /path/to/ViFailback-Dataset \
     --output_dir ./direct_visualizations
 ```
+A visualization example of the raw ground-truth annotations:
+![image](./assets/direct.png)
+A visualization example of the outputs from VLMs:
+![image](./assets/infer.png)
 
-2. ViFailback-8B Inference & Rendering (`vifailback_infer.py`)
+### 2. ViFailback-8B Inference & Rendering (`vifailback_infer.py`)
 Run real-time inference using the fine-tuned ViFailback-8B model (our LoRA checkpoints based on Qwen3-VL-8B-Instruct). The script parses the visual symbols from the model's CoT output and automatically overlays the corrective visual symbols onto the target keyframe.
 
 
@@ -64,9 +85,9 @@ Optional Flag: By default, the script assumes the model outputs normalized coord
 
 
 ## 📊 Dataset and Model
-🤗 ViFailback Dataset: 58,128 high-quality VQA pairs across 5,202 real-world manipulation trajectories.
+**🤗 ViFailback Dataset:** 58,128 high-quality VQA pairs across 5,202 real-world manipulation trajectories.
 
-🤗 ViFailback-8B Model: Our fine-tuned Vision-Language Model for manipulation failure diagnosis and correction.
+**🤗 ViFailback-8B Model:** Our fine-tuned Vision-Language Model for manipulation failure diagnosis and correction.
 
 ## 📝 Citation
 If you find our paper, dataset, or code useful in your research, please consider citing our work:
