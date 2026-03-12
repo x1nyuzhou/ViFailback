@@ -80,7 +80,7 @@ python vifailback_infer.py \
     --output_dir ./inference_visualizations
 ```
 
-Optional Flag: By default, the script assumes the model outputs normalized coordinates [0, 1000]. If you are testing a model that outputs absolute pixel coordinates, pass the --disable_normalization flag.
+*Optional Flag: By default, the script assumes the model outputs normalized coordinates [0, 1000]. If you are testing a model that outputs absolute pixel coordinates, pass the --disable_normalization flag.*
 
 
 
