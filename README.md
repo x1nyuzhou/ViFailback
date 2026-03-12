@@ -64,7 +64,7 @@ Optional Flag: By default, the script assumes the model outputs normalized coord
 
 
 ## 📊 Dataset and Model
-🤗 ViFailback Dataset: 58,126 high-quality VQA pairs across 5,202 real-world manipulation trajectories.
+🤗 ViFailback Dataset: 58,128 high-quality VQA pairs across 5,202 real-world manipulation trajectories.
 
 🤗 ViFailback-8B Model: Our fine-tuned Vision-Language Model for manipulation failure diagnosis and correction.
 
