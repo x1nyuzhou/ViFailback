@@ -30,21 +30,21 @@
         "tag": "cot_avoidance_code_qa"
     },
     {
-        "video": "grasp_spatula_place_basket/videos/episode_3_cam_high.mp4",
+        "video": "annotated_data/grasp_spatula_place_basket/videos/episode_3_cam_high.mp4",
         "task": "Use the left arm to grasp the wooden spatula and place it in the blue basket.",
         "failure_detection": "yes",
         "images": [
-            "grasp_spatula_place_basket/frames/episode_3_cam_high/0.jpg",
-            "grasp_spatula_place_basket/frames/episode_3_cam_high/24_avoid_keyframe.jpg",
-            "grasp_spatula_place_basket/frames/episode_3_cam_high/25.jpg",
-            "grasp_spatula_place_basket/frames/episode_3_cam_high/50.jpg",
-            "grasp_spatula_place_basket/frames/episode_3_cam_high/75.jpg",
-            "grasp_spatula_place_basket/frames/episode_3_cam_high/100.jpg",
-            "grasp_spatula_place_basket/frames/episode_3_cam_high/104_correct_keyframe.jpg",
-            "grasp_spatula_place_basket/frames/episode_3_cam_high/125.jpg",
-            "grasp_spatula_place_basket/frames/episode_3_cam_high/150.jpg",
-            "grasp_spatula_place_basket/frames/episode_3_cam_high/175.jpg",
-            "grasp_spatula_place_basket/frames/episode_3_cam_high/177.jpg"
+            "annotated_data/grasp_spatula_place_basket/frames/episode_3_cam_high/0.jpg",
+            "annotated_data/grasp_spatula_place_basket/frames/episode_3_cam_high/24_avoid_keyframe.jpg",
+            "annotated_data/grasp_spatula_place_basket/frames/episode_3_cam_high/25.jpg",
+            "annotated_data/grasp_spatula_place_basket/frames/episode_3_cam_high/50.jpg",
+            "annotated_data/grasp_spatula_place_basket/frames/episode_3_cam_high/75.jpg",
+            "annotated_data/grasp_spatula_place_basket/frames/episode_3_cam_high/100.jpg",
+            "annotated_data/grasp_spatula_place_basket/frames/episode_3_cam_high/104_correct_keyframe.jpg",
+            "annotated_data/grasp_spatula_place_basket/frames/episode_3_cam_high/125.jpg",
+            "annotated_data/grasp_spatula_place_basket/frames/episode_3_cam_high/150.jpg",
+            "annotated_data/grasp_spatula_place_basket/frames/episode_3_cam_high/175.jpg",
+            "annotated_data/grasp_spatula_place_basket/frames/episode_3_cam_high/177.jpg"
         ],
         "subtasks": [
             "1. Move the left arm to approach and align the wooden spatula.",
@@ -54,8 +54,8 @@
         ],
         "keyframe": [
             {
-                "avoid_keyframe": "grasp_spatula_place_basket/frames/episode_3_cam_high/24_avoid_keyframe.jpg",
-                "correct_keyframe": "grasp_spatula_place_basket/frames/episode_3_cam_high/104_correct_keyframe.jpg"
+                "avoid_keyframe": "annotated_data/grasp_spatula_place_basket/frames/episode_3_cam_high/24_avoid_keyframe.jpg",
+                "correct_keyframe": "annotated_data/grasp_spatula_place_basket/frames/episode_3_cam_high/104_correct_keyframe.jpg"
             }
         ],
         "failure_subtask": "1",
@@ -63,7 +63,7 @@
         "avoidance": [
             {
                 "low_level": " ",
-                "avoid_keyframe_annotations": "grasp_spatula_place_basket/frames/episode_3_cam_high/24_avoid_keyframe_annotations.jpg",
+                "avoid_keyframe_annotations": "annotated_data/grasp_spatula_place_basket/frames/episode_3_cam_high/24_avoid_keyframe_annotations.jpg",
                 "avoid_keyframe_annotations_code": [
                     {
                         "type": "lock",
@@ -89,7 +89,7 @@
         "correction": [
             {
                 "low_level": " ",
-                "correct_keyframe_annotations": "grasp_spatula_place_basket/frames/episode_3_cam_high/104_correct_keyframe_annotations.jpg",
+                "correct_keyframe_annotations": "annotated_data/grasp_spatula_place_basket/frames/episode_3_cam_high/104_correct_keyframe_annotations.jpg",
                 "correct_keyframe_annotations_code": [
                     {
                         "type": "rewind",

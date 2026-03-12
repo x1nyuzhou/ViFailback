@@ -81,7 +81,7 @@ def process_format_2_original_annotation(item, item_index, dataset_root, output_
         render_commands = phase_data.get(f"{prefix}_keyframe_annotations_code", [])
         
         if rel_img_path and render_commands:
-            abs_img_path = os.path.join(dataset_root, 'annotated_data', rel_img_path)
+            abs_img_path = os.path.join(dataset_root, rel_img_path)
             
             if not os.path.exists(abs_img_path):
                 print(f"Image not found: {abs_img_path}")
