@@ -47,6 +47,8 @@ pip install -r requirements_render.txt
 
 If you plan to run the end-to-end VLM inference script (`vifailback_infer.py`), you need to install the deep learning and Hugging Face libraries in addition to the rendering tools.
 
+*Hardware Requirement: Running our ViFailback-8B model in standard precision requires approximately 20-24 GB of GPU VRAM depending on the images' input size.*
+
 Install the dependencies:
 ```bash
 pip install -r requirements.txt
