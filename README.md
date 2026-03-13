@@ -11,6 +11,8 @@ Official repository for the **CVPR 2026** paper **"Diagnose, Correct, and Learn 
 
 ViFailback is a comprehensive framework designed to diagnose robotic manipulation failures and provide both textual and visual correction guidance. By leveraging intuitive visual symbols (arrows, crosshairs, state icons), ViFailback bridges the gap between failure diagnosis and policy correction, allowing Vision-Language-Action (VLA) models to truly learn from and recover from real-world failures.
 
+![image](./assets/overall.png)
+
 This repository provides the core utility scripts for parsing, rendering, and inferring the **Visual Symbols** used in the ViFailback framework and the **ViFailback-8B** Vision-Language Model (VLM).
 
 ## 🌟 Key Features
@@ -88,6 +90,7 @@ python vifailback_infer.py \
 
 ## 📊 Dataset and Model
 **🤗 [ViFailback Dataset](https://huggingface.co/datasets/sii-rhos-ai/ViFailback-Dataset):** 58,128 high-quality VQA pairs across 5,202 real-world manipulation trajectories.
+
 
 **🤗 [ViFailback-8B Model](https://huggingface.co/sii-rhos-ai/ViFailback-8B):** Our fine-tuned Vision-Language Model for manipulation failure diagnosis and correction.
 
