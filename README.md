@@ -98,10 +98,11 @@ python vifailback_infer.py \
 If you find our paper, dataset, or code useful in your research, please consider citing our work:
 
 ```Code snippet
-@article{zeng2025diagnose,
-  title={Diagnose, Correct, and Learn from Manipulation Failures via Visual Symbols},
+@inproceedings{zeng2026diagnose,
+  title={Diagnose, correct, and learn from manipulation failures via visual symbols},
   author={Zeng, Xianchao and Zhou, Xinyu and Li, Youcheng and Shi, Jiayou and Li, Tianle and Chen, Liangming and Ren, Lei and Li, Yong-Lu},
-  journal={arXiv preprint arXiv:2512.02787},
-  year={2025}
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={42386--42395},
+  year={2026}
 }
 ```
